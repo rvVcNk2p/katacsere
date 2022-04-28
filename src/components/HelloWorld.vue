@@ -28,9 +28,10 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '../stores/main'
-import { defineProps } from 'vue'
 import { computed } from '@vue/reactivity'
+import { defineProps } from 'vue'
+
+import { useMainStore } from '../stores/main'
 
 const mainStore = useMainStore()
 
