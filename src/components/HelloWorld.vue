@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import { ref, defineProps } from "vue";
-
-defineProps({
-  msg: {
-    type: String,
-    default: "",
-  },
-});
-const count = ref(0);
-</script>
-
 <template>
   <h1>{{ msg }}</h1>
 
@@ -30,12 +18,31 @@ const count = ref(0);
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <button type="button" @click="count++">count is: {{ count }}</button>
+  <button type="button" @click="mainStore.increment()">
+    count is: {{ counter }}
+  </button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
 </template>
+
+<script setup lang="ts">
+import { useMainStore } from "../stores/main";
+import { defineProps } from "vue";
+import { computed } from "@vue/reactivity";
+
+const mainStore = useMainStore();
+
+defineProps({
+  msg: {
+    type: String,
+    default: "",
+  },
+});
+
+const counter = computed(() => mainStore.$state.counter);
+</script>
 
 <style scoped>
 a {
