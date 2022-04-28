@@ -1,20 +1,20 @@
-import { defineStore, acceptHMRUpdate } from "pinia";
+import { defineStore, acceptHMRUpdate } from 'pinia'
 
 export const useMainStore = defineStore({
-  id: "main",
+  id: 'main',
   state: () => ({
-    name: "Leo Kussy",
+    name: 'Leo Kussy',
     isAdmin: true,
-    counter: 0,
+    counter: 0
   }),
 
   actions: {
     increment() {
-      this.counter++;
-    },
-  },
-});
+      this.counter++
+    }
+  }
+})
 
 if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useMainStore, import.meta.hot));
+  import.meta.hot.accept(acceptHMRUpdate(useMainStore, import.meta.hot))
 }

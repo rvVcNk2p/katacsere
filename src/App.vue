@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from './components/HelloWorld.vue'
 
-import { computed } from "vue";
-import { useMainStore } from "./stores/main";
+import { computed } from 'vue'
+import { useMainStore } from './stores/main'
 
 const fullname = computed(() => {
-  return useMainStore().$state.name;
-});
+  return useMainStore().$state.name
+})
 </script>
 
 <template>

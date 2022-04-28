@@ -28,20 +28,20 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from "../stores/main";
-import { defineProps } from "vue";
-import { computed } from "@vue/reactivity";
+import { useMainStore } from '../stores/main'
+import { defineProps } from 'vue'
+import { computed } from '@vue/reactivity'
 
-const mainStore = useMainStore();
+const mainStore = useMainStore()
 
 defineProps({
   msg: {
     type: String,
-    default: "",
-  },
-});
+    default: ''
+  }
+})
 
-const counter = computed(() => mainStore.$state.counter);
+const counter = computed(() => mainStore.$state.counter)
 </script>
 
 <style scoped lang="scss">
