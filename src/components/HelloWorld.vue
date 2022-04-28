@@ -1,6 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
-
+  <h1 class="text-3xl font-bold underline">{{ msg }}</h1>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
@@ -57,8 +56,8 @@ label {
 
 code {
   background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
+  padding: rem(2) rem(4);
+  border-radius: rem(4);
   color: #304455;
 }
 </style>
