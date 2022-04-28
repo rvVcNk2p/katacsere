@@ -44,9 +44,9 @@ defineProps({
 const counter = computed(() => mainStore.$state.counter);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 a {
-  color: #42b983;
+  color: $global__color--green;
 }
 
 label {
