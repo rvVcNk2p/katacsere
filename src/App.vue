@@ -1,18 +1,11 @@
-<script setup lang="ts">
-import { computed } from 'vue'
-
-import HelloWorld from './components/HelloWorld.vue'
-import { useMainStore } from './stores/main'
-
-const fullname = computed(() => {
-  return useMainStore().$state.name
-})
-</script>
-
 <template>
-  <img class="mx-auto" alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld :msg="`Hello ${fullname}!`" />
+  <navigation-bar />
+  <router-view></router-view>
 </template>
+
+<script setup lang="ts">
+import navigationBar from './components/nav/NavigationBar.vue'
+</script>
 
 <style>
 #app {
