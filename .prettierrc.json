@@ -7,8 +7,8 @@
   "semi": false,
   "endOfLine": "auto",
   "importOrder": [
-    "^(next/(.*)$)|^(next$)",
     "<THIRD_PARTY_MODULES>",
+    "^@/(.*)$",
     "next-seo.config",
     "^components/(.*)$",
     "^utils/(.*)$",

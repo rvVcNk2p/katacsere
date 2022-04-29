@@ -1,5 +1,5 @@
 <template>
-  <img class="mx-auto" alt="Vue logo" src="../assets/logo.png" />
+  <img class="mx-auto" alt="Vue logo" src="@/assets/logo.png" />
   <h1 class="text-3xl font-bold underline">{{ msg }}</h1>
   <p class="mt-4">
     Recommended IDE setup:
@@ -31,7 +31,7 @@
 import { computed } from '@vue/reactivity'
 import { defineProps } from 'vue'
 
-import { useMainStore } from '../stores/main'
+import { useMainStore } from '@/stores/main'
 
 const mainStore = useMainStore()
 

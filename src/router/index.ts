@@ -5,13 +5,13 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'home',
     component: () =>
-      import(/* webpackChunkName: "hello-page" */ '../views/HomePage.vue')
+      import(/* webpackChunkName: "hello-page" */ '@/views/HomePage.vue')
   },
   {
     path: '/about',
     name: 'about',
     component: () =>
-      import(/* webpackChunkName: "about-page" */ '../views/AboutPage.vue')
+      import(/* webpackChunkName: "about-page" */ '@/views/AboutPage.vue')
   },
   {
     path: '/:pathMatch(.*)*',
