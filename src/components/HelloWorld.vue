@@ -1,5 +1,9 @@
 <template>
-  <img class="mx-auto" alt="Vue logo" src="@/assets/logo.png" />
+  <img
+    class="mx-auto w-[100px] mb-10"
+    alt="Vue logo"
+    src="@/assets/logo_transparent_cropped.png"
+  />
   <h1 class="text-3xl font-bold underline">{{ msg }}</h1>
   <p class="mt-4">
     Recommended IDE setup:
