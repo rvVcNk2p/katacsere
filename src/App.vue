@@ -1,10 +1,12 @@
 <template>
-  <navigation-bar />
+  <Header />
   <router-view></router-view>
+  <Footer />
 </template>
 
 <script setup lang="ts">
-import navigationBar from './components/nav/NavigationBar.vue'
+import Footer from './components/nav/Footer.vue'
+import Header from './components/nav/Header.vue'
 </script>
 
 <style>
@@ -13,7 +15,5 @@ import navigationBar from './components/nav/NavigationBar.vue'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

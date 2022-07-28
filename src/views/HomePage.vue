@@ -1,14 +1,9 @@
 <template>
-  <HelloWorld :msg="`Hello ${fullname}!`" />
+  <FeatureSection />
+  <FeatureSection_2 />
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
-
-import HelloWorld from '@/components/HelloWorld.vue'
-import { useMainStore } from '@/stores/main'
-
-const fullname = computed(() => {
-  return useMainStore().$state.name
-})
+import FeatureSection from '@/components/FeatureSection.vue'
+import FeatureSection_2 from '@/components/FeatureSection_2.vue'
 </script>
