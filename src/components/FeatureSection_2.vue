@@ -42,7 +42,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { CheckIcon } from '@heroicons/vue/outline'
 
 const features = [

@@ -348,7 +348,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { MailIcon, PhoneIcon } from '@heroicons/vue/outline'
 
 const faqs = [
