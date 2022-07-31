@@ -80,7 +80,7 @@ import { defineComponent, h } from 'vue'
 const footerNavigation = {
   support: [
     { name: 'Főoldal', href: '/' },
-    { name: 'Árazás', href: '/pricing' },
+    { name: 'Áraink', href: '/pricing' },
     { name: 'Kapcsolat', href: '/contact' }
   ],
   social: [

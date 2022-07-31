@@ -325,25 +325,21 @@
         </div>
       </section>
 
-      <div class="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-gray-900 text-center">
-          Gyakran ismételt kérdések
-        </h2>
-        <div class="mt-12">
-          <dl
-            class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3"
-          >
-            <div v-for="faq in faqs" :key="faq.id">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                {{ faq.question }}
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                {{ faq.answer }}
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </div>
+      <FaqSection
+        title="Gyakran ismételt kérdések"
+        sub-title="Csomagjaink"
+        :faqs="PackagesFaqs"
+      />
+      <FaqSection
+        title="Gyakran ismételt kérdések"
+        sub-title="Cégalapítás"
+        :faqs="SettingUpCompanyFaqs"
+      />
+      <FaqSection
+        title="Gyakran ismételt kérdések"
+        sub-title="Könyvelés"
+        :faqs="AccountingFaqs"
+      />
     </main>
   </div>
 </template>
@@ -351,25 +347,6 @@
 <script setup lang="ts">
 import { MailIcon, PhoneIcon } from '@heroicons/vue/outline'
 
-const faqs = [
-  {
-    id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-  },
-  {
-    id: 2,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-  },
-  {
-    id: 3,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-  }
-  // More questions...
-]
+import FaqSection from '@/components/FaqSection.vue'
+import { AccountingFaqs, PackagesFaqs, SettingUpCompanyFaqs } from '@/data/faq'
 </script>

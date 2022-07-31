@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <Popover as="header" class="relative">
-      <div class="bg-gray-50">
+      <div class="bg-white">
         <nav
           class="relative max-w-7xl mx-auto flex items-center justify-between py-10 px-6 xl:px-8"
           aria-label="Global"
@@ -95,7 +95,7 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 const navigation = [
   { name: 'Főoldal', href: '/' },
-  { name: 'Árazás', href: '/pricing' },
+  { name: 'Áraink', href: '/pricing' },
   { name: 'Kapcsolat', href: '/contact' }
 ]
 </script>
