@@ -1,5 +1,24 @@
 <template>
   <footer class="bg-gray-900" aria-labelledby="footer-heading">
+    <CtaSection />
+    <FaqSection
+      title="Gyakran ismételt kérdések"
+      sub-title="Csomagjaink"
+      :faqs="PackagesFaqs"
+    />
+    <CtaSection />
+    <FaqSection
+      title="Gyakran ismételt kérdések"
+      sub-title="Cégalapítás"
+      :faqs="SettingUpCompanyFaqs"
+    />
+    <CtaSection />
+    <FaqSection
+      title="Gyakran ismételt kérdések"
+      sub-title="Könyvelés"
+      :faqs="AccountingFaqs"
+    />
+
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-2 xl:gap-8">
@@ -76,6 +95,10 @@
 
 <script setup lang="ts">
 import { defineComponent, h } from 'vue'
+
+import CtaSection from '@/components/CtaSection.vue'
+import FaqSection from '@/components/FaqSection.vue'
+import { AccountingFaqs, PackagesFaqs, SettingUpCompanyFaqs } from '@/data/faq'
 
 const footerNavigation = {
   support: [

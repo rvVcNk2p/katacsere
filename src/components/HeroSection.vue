@@ -32,7 +32,7 @@
               class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
             >
               Ha azon gondolkodol, hogy milyen KATA alternatíva lehet a piacon
-              de valamiért az
+              és valamiért az
               <span class="text-red-900">átalányadózás</span> nem áll közel
               hozzád? Mi segítünk, hogy pár héten belül egy
               <span class="text-teal-600 font-bold">saját romániai céggel</span>

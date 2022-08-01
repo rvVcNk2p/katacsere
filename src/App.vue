@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import Footer from './components/nav/Footer.vue'
-import Header from './components/nav/Header.vue'
+import Footer from './components/nav/MainFooter.vue'
+import Header from './components/nav/MainHeader.vue'
 </script>
 
 <style>

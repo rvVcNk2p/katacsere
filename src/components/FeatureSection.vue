@@ -13,9 +13,10 @@
         >
           Cégalapítás és könyvelés, egyszerűen
         </p>
-        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-          voluptatum cupiditate veritatis in accusamus quisquam.
+        <p class="mt-10 mb-20 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          Egyszerű, megbízható szolgáltatás. Rejtett költségek nélkül. <br />
+          Vedd fel Velünk a kapcsolatot (az igényfelmérő kitöltésével) és akár
+          heteken belül elkészülhet a romániai céged.
         </p>
       </div>
 

@@ -24,7 +24,7 @@
           <h3 class="text-xl font-semibold text-gray-900">{{ tier.title }}</h3>
           <p
             v-if="tier.mostPopular"
-            class="absolute top-0 py-1.5 px-4 bg-indigo-500 rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2"
+            class="absolute top-0 py-1.5 px-4 bg-teal-500 rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2"
           >
             Legnépszerűbb
           </p>
@@ -40,7 +40,7 @@
           <ul role="list" class="mt-6 space-y-6">
             <li v-for="feature in tier.features" :key="feature" class="flex">
               <CheckIcon
-                class="flex-shrink-0 w-6 h-6 text-indigo-500"
+                class="flex-shrink-0 w-6 h-6 text-teal-500"
                 aria-hidden="true"
               />
               <span class="ml-3 text-gray-500">{{ feature }}</span>
@@ -52,8 +52,8 @@
           href="#"
           :class="[
             tier.mostPopular
-              ? 'bg-indigo-500 text-white hover:bg-indigo-600'
-              : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
+              ? 'bg-teal-500 text-white hover:bg-teal-600'
+              : 'bg-teal-50 text-teal-700 hover:bg-teal-100',
             'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium'
           ]"
           >{{ tier.cta }}</a

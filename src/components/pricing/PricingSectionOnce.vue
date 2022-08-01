@@ -5,18 +5,22 @@
         <h2
           class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider"
         >
-          Pricing
+          Árazás
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl"
         >
-          The right price for you, whoever you are
+          A megfelelő ár, amit Rád szabtunk!
         </p>
         <p
           class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-          numquam eligendi quos odit doloribus molestiae voluptatum.
+          Csomagjaink 120.000-200.000 Forint között terjednek, s 3 kategóriába
+          sorolják be a szolgáltatásainkat amit az alapján állítottunk össze,
+          hogy mennyire szeretnél önállósodni a cég alapítás folyamatában.
+          <br />
+          Összességében, a kényelem és a gyorsaság az amiben eltérnek
+          csomagjaink. Bármelyiket is választod, biztosan nem fogsz csalódni!
         </p>
       </div>
     </div>
@@ -36,8 +40,8 @@
                   <div class="bg-white px-6 py-10">
                     <div>
                       <h3
-                        class="text-center text-2xl font-medium text-gray-900"
                         id="tier-hobby"
+                        class="text-center text-2xl font-medium text-gray-900"
                       >
                         Önálló csomag
                       </h3>
@@ -45,13 +49,10 @@
                         <span
                           class="px-3 flex items-start text-6xl tracking-tight text-gray-900"
                         >
-                          <span class="mt-2 mr-2 text-4xl font-medium">
-                            €
-                          </span>
-                          <span class="font-extrabold"> 299 </span>
+                          <span class="font-extrabold"> 120,000 </span>
                         </span>
                         <span class="text-xl font-medium text-gray-500">
-                          EUR
+                          FT
                         </span>
                       </div>
                     </div>
@@ -71,7 +72,9 @@
                             aria-hidden="true"
                           />
                         </div>
-                        <p class="ml-3 text-base font-medium text-gray-500">
+                        <p
+                          class="ml-3 text-base font-medium text-gray-500 text-left"
+                        >
                           {{ feature }}
                         </p>
                       </li>
@@ -83,7 +86,7 @@
                           class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-teal-600 hover:bg-gray-50"
                           aria-describedby="tier-hobby"
                         >
-                          Start your trial
+                          Kiválasztom
                         </a>
                       </div>
                     </div>
@@ -111,8 +114,8 @@
                 <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
                   <div>
                     <h3
-                      class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
                       id="tier-growth"
+                      class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
                     >
                       Teljes csomag
                     </h3>
@@ -120,11 +123,10 @@
                       <span
                         class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl"
                       >
-                        <span class="mt-2 mr-2 text-4xl font-medium"> € </span>
-                        <span class="font-extrabold"> 375 </span>
+                        <span class="font-extrabold"> 150,000 </span>
                       </span>
                       <span class="text-2xl font-medium text-gray-500">
-                        EUR
+                        FT
                       </span>
                     </div>
                   </div>
@@ -144,7 +146,9 @@
                           aria-hidden="true"
                         />
                       </div>
-                      <p class="ml-3 text-base font-medium text-gray-500">
+                      <p
+                        class="ml-3 text-base font-medium text-gray-500 text-left"
+                      >
                         {{ feature }}
                       </p>
                     </li>
@@ -156,7 +160,7 @@
                         class="block w-full text-center rounded-lg border border-transparent bg-teal-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-teal-700"
                         aria-describedby="tier-growth"
                       >
-                        Start your trial
+                        Kiválasztom
                       </a>
                     </div>
                   </div>
@@ -173,8 +177,8 @@
                   <div class="bg-white px-6 py-10">
                     <div>
                       <h3
-                        class="text-center text-2xl font-medium text-gray-900"
                         id="tier-scale"
+                        class="text-center text-2xl font-medium text-gray-900"
                       >
                         Kiemelt csomag
                       </h3>
@@ -182,13 +186,10 @@
                         <span
                           class="px-3 flex items-start text-6xl tracking-tight text-gray-900"
                         >
-                          <span class="mt-2 mr-2 text-4xl font-medium">
-                            €
-                          </span>
-                          <span class="font-extrabold"> 499 </span>
+                          <span class="font-extrabold"> 200,000 </span>
                         </span>
                         <span class="text-xl font-medium text-gray-500">
-                          EUR
+                          FT
                         </span>
                       </div>
                     </div>
@@ -208,7 +209,9 @@
                             aria-hidden="true"
                           />
                         </div>
-                        <p class="ml-3 text-base font-medium text-gray-500">
+                        <p
+                          class="ml-3 text-base font-medium text-gray-500 text-left"
+                        >
                           {{ feature }}
                         </p>
                       </li>
@@ -220,7 +223,7 @@
                           class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-teal-600 hover:bg-gray-50"
                           aria-describedby="tier-scale"
                         >
-                          Start your trial
+                          Kiválasztom
                         </a>
                       </div>
                     </div>
@@ -239,20 +242,21 @@
 import { CheckIcon } from '@heroicons/vue/outline'
 
 const hobbyFeatures = [
-  'Pariatur quod similique',
-  'Sapiente libero doloribus',
-  'Vel ipsa esse repudiandae'
-]
-const scaleFeatures = [
-  'Pariatur quod similique',
-  'Sapiente libero doloribus',
-  'Vel ipsa esse repudiandae'
+  'Fedezzük a összes cégalapítás költséget ami',
+  'Közvetlenül a könyvelő irodával kell tartanod majd a kapcsolatot',
+  '3-4 hét alatt megalapításra kerül a céged'
 ]
 const growthFeatures = [
-  'Quia rem est sed impedit magnam',
-  'Dolorem vero ratione voluptates',
-  'Qui sed ab doloribus voluptatem dolore',
-  'Laborum commodi molestiae id et fugiat',
-  'Nam ut ipsa nesciunt culpa modi dolor'
+  'Minden ami az előző csomagban',
+  'Segítünk az átutazásban ',
+  'Segítünk a bankszámla megnyitásában ',
+  'Válaszolunk az összes kérdésedre, legyen az bármi',
+  'Munkaidőn kívül is kereshetsz minket bizalommal',
+  'Kiemelt segítségnyújtás a megalapítási folyamat alatt'
+]
+const scaleFeatures = [
+  'Minden ami az előző csomagban',
+  'Kiemelten kezeljük az ügyed, és a lehető leggyorsabban intézkedünk',
+  '2-3 hét alatt megalapításra kerül a céged'
 ]
 </script>
