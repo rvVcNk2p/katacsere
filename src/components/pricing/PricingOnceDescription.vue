@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="relative bg-white">
     <div class="absolute inset-0" aria-hidden="true">
@@ -108,7 +107,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {
   CalendarIcon,
   CheckIcon,

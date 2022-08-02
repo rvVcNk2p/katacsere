@@ -2,13 +2,40 @@
 <template>
   <div class="max-w-7xl mx-auto py-24 px-4 bg-white sm:px-6 lg:px-8">
     <h2
+      class="text-3xl leading-6 font-black text-gray-700 uppercase tracking-wider mb-10"
+    >
+      KÖNYVELÉS
+    </h2>
+    <h2
       class="text-3xl font-extrabold text-gray-900 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl"
     >
-      Pricing plans for teams of all sizes
+      Árajánlatok minden méretű cég számára
     </h2>
-    <p class="mt-6 max-w-2xl text-xl text-gray-500">
-      Choose an affordable plan that's packed with the best features for
-      engaging your audience, creating customer loyalty, and driving sales.
+    <p class="mt-6 max-w-5xl text-xl text-gray-500 mx-auto">
+      Válaszd ki azt a megoldást, amelyik a legjobban passzol a működésedhez.
+    </p>
+    <hr class="mx-auto max-w-md border border-teal-500 mt-6" />
+    <p class="mt-6 max-w-5xl text-xl text-gray-500 mx-auto">
+      1. Ha régen KATAs voltál, akkor valószínűleg csak kevés számlát állítottál
+      ki, így számodra a tökéletes választás az
+      <span class="text-black font-black">'Alap'</span> csomagunk.
+      <br />
+      2. Ha például webshopot üzemeltetsz, és havi szinte már több 100+ számlát
+      kell kiállítanod, akkor a
+      <span class="text-black font-black">'Normál'</span> csomagunkat ajánljuk
+      figyelmedbe.
+      <br />
+      3. Ha viszont több céged van vagy a havi szinten kiállított számlák száma
+      meghaladha a 750 darabot, akkor a
+      <span class="text-black font-black">'Profi'</span> csomagunk lesz, amire
+      szükséged van!
+    </p>
+    <hr class="mx-auto max-w-md border border-teal-500 mt-6" />
+    <p class="mt-6 max-w-5xl text-xl text-gray-500 mx-auto">
+      <span class="text-black font-black">FONTOS:</span> Az összes ügyfelünk,
+      ugyan azt a kiemelkedő szolgáltatást fogja kapni mint mindenki más. A
+      csomagok, csak a havi kiállított számlamennyiségben térnek el. Mindenkit
+      kiemelt partnerként kezelünk!
     </p>
 
     <!-- Tiers -->
@@ -29,10 +56,12 @@
             Legnépszerűbb
           </p>
           <p class="mt-4 flex justify-center items-baseline text-gray-900">
-            <span class="text-5xl font-extrabold tracking-tight"
-              >€{{ tier.price }}</span
+            <span class="text-5xl font-extrabold tracking-tight">{{
+              tier.price
+            }}</span>
+            <span class="ml-1 text-xl font-semibold"
+              >Ft {{ tier.frequency }}</span
             >
-            <span class="ml-1 text-xl font-semibold">{{ tier.frequency }}</span>
           </p>
           <p class="mt-6 text-gray-500">{{ tier.description }}</p>
 
@@ -43,7 +72,7 @@
                 class="flex-shrink-0 w-6 h-6 text-teal-500"
                 aria-hidden="true"
               />
-              <span class="ml-3 text-gray-500">{{ feature }}</span>
+              <span class="ml-3 text-gray-500 text-left">{{ feature }}</span>
             </li>
           </ul>
         </div>
@@ -60,6 +89,8 @@
         >
       </div>
     </div>
+
+    <hr class="mx-auto max-w-md border border-teal-500 mt-28" />
   </div>
 </template>
 
@@ -70,47 +101,49 @@ const pricing = {
   tiers: [
     {
       title: 'Alap',
-      price: 89.99,
+      price: '34,990',
       frequency: '/hó',
-      description: 'The essentials to provide your best work for clients.',
+      description:
+        'Ha régen KATAs voltál, akkor ez lesz számodra a tökéletes választás!',
       features: [
-        '5 products',
-        'Up to 1,000 subscribers',
-        'Basic analytics',
-        '48-hour support response time'
+        'Havi 100 db számláig',
+        'Könyvelés folyamatos frissen tartása',
+        'Rendszeres és aktív kapcsolattartás',
+        '3 havi emlékeztető a fizetési kötelezettségedről',
+        'Folyamatos tájékoztatás a céget érintő közelgő változásokról'
       ],
-      cta: 'Havi számlázás',
+      cta: 'Kiválasztom',
       mostPopular: true
     },
     {
       title: 'Normál',
-      price: 149.99,
+      price: '59,990',
       frequency: '/hó',
-      description: 'A plan that scales with your rapidly growing business.',
+      description:
+        'Ha megszaporodtak a havi számláid, akkor erre lesz szükséged!',
       features: [
-        '25 products',
-        'Up to 10,000 subscribers',
-        'Advanced analytics',
-        '24-hour support response time',
-        'Marketing automations'
+        'Havi 100-750 számla között',
+        'Könyvelés folyamatos frissen tartása',
+        'Rendszeres és aktív kapcsolattartás',
+        '3 havi emlékeztető a fizetési kötelezettségedről',
+        'Folyamatos tájékoztatás a céget érintő közelgő változásokról'
       ],
-      cta: 'Havi számlázás',
+      cta: 'Kiválasztom',
       mostPopular: false
     },
     {
       title: 'Profi',
-      price: 249.99,
+      price: '99,990',
       frequency: '/hó',
-      description: 'Dedicated support and infrastructure for your company.',
+      description: 'Több mint 750+ számlád van a hónapban? Válaszd ez!',
       features: [
-        'Unlimited products',
-        'Unlimited subscribers',
-        'Advanced analytics',
-        '1-hour, dedicated support response time',
-        'Marketing automations',
-        'Custom integrations'
+        'Havi 750+ számla felett',
+        'Könyvelés folyamatos frissen tartása',
+        'Rendszeres és aktív kapcsolattartás',
+        '3 havi emlékeztető a fizetési kötelezettségedről',
+        'Folyamatos tájékoztatás a céget érintő közelgő változásokról'
       ],
-      cta: 'Havi számlázás',
+      cta: 'Kiválasztom',
       mostPopular: false
     }
   ]

@@ -3,9 +3,9 @@
     <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
       <div class="text-center">
         <h2
-          class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider"
+          class="text-3xl leading-6 font-semibold text-gray-300 uppercase tracking-wider mb-10"
         >
-          Árazás
+          Cégalapítás
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl"
@@ -49,7 +49,7 @@
                         <span
                           class="px-3 flex items-start text-6xl tracking-tight text-gray-900"
                         >
-                          <span class="font-extrabold"> 120,000 </span>
+                          <span class="font-extrabold"> 119,990 </span>
                         </span>
                         <span class="text-xl font-medium text-gray-500">
                           FT
@@ -123,7 +123,7 @@
                       <span
                         class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl"
                       >
-                        <span class="font-extrabold"> 150,000 </span>
+                        <span class="font-extrabold"> 149,990 </span>
                       </span>
                       <span class="text-2xl font-medium text-gray-500">
                         FT
@@ -186,7 +186,7 @@
                         <span
                           class="px-3 flex items-start text-6xl tracking-tight text-gray-900"
                         >
-                          <span class="font-extrabold"> 200,000 </span>
+                          <span class="font-extrabold"> 199,990 </span>
                         </span>
                         <span class="text-xl font-medium text-gray-500">
                           FT
