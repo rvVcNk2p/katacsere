@@ -325,28 +325,11 @@
         </div>
       </section>
 
-      <FaqSection
-        title="Gyakran ismételt kérdések"
-        sub-title="Csomagjaink"
-        :faqs="PackagesFaqs"
-      />
-      <FaqSection
-        title="Gyakran ismételt kérdések"
-        sub-title="Cégalapítás"
-        :faqs="SettingUpCompanyFaqs"
-      />
-      <FaqSection
-        title="Gyakran ismételt kérdések"
-        sub-title="Könyvelés"
-        :faqs="AccountingFaqs"
-      />
+      <hr class="mx-auto max-w-md border border-teal-500 my-20" />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
 import { MailIcon, PhoneIcon } from '@heroicons/vue/outline'
-
-import FaqSection from '@/components/FaqSection.vue'
-import { AccountingFaqs, PackagesFaqs, SettingUpCompanyFaqs } from '@/data/faq'
 </script>
