@@ -18,7 +18,7 @@ export const PackagesFaqs: Faq[] = [
     question:
       'Miért éri meg román micro céget létrehoznom? (MICRO vs. átalányadózás)',
     answer:
-      '1.A: 12M bevétel esetén évi 2,8M Ft-al maradhat Nálad több.<br />1.B: 24M bevétel esetén évi 6,8M Ft-al maradhat Nálad több.<br /><br />2. Évi 12M Ft helyett közel 24M Ft-os keret áll rendelkezésedre.<br /><br />3. Nem kell árat emelned így a konkurenciával szemben, egészen nagy el[nyre tehetsz szert.<br /><br />4. Leegyszerűsített adózási formában maradhatsz, így innentől ugyan úgy nem kell foglalkoznod a költségszámlák gyűjtésével.<br /><br />5. EU-s nettó számlát állíthatsz ki. Ha MO-ra számlázol, a kiállított számlák nem fogják tartalmazni a fennmaradó adó hányadot.<br />'
+      '1.A: 12M bevétel esetén évi 2,8M Ft-al maradhat Nálad több.<br />1.B: 24M bevétel esetén évi 6,8M Ft-al maradhat Nálad több.<br /><br />2. Évi 12M Ft helyett közel 24M Ft-os keret áll rendelkezésedre.<br /><br />3. Nem kell árat emelned így a konkurenciával szemben, egészen nagy előnyre tehetsz szert.<br /><br />4. Leegyszerűsített adózási formában maradhatsz, így innentől ugyanúgy nem kell foglalkoznod a költségszámlák gyűjtésével.<br /><br />5. EU-s nettó számlát állíthatsz ki. Ha MO-ra számlázol, a kiállított számlák nem fogják tartalmazni a fennmaradó adó hányadot.<br />'
   },
   {
     question: 'Milyen szolgáltatást tudtok nyújtani számomra?',
@@ -51,7 +51,7 @@ export const SettingUpCompanyFaqs: Faq[] = [
   {
     question: 'Hányszor kell átmennem személyesen Romániába?',
     answer:
-      'Legalább 1 darab látogatásra szükség lesz, mivel a saját céged alapítási iratát csak Te írhatod alá. Ez követően készítünk egy felhatalmazást, így többször már nem kell átjönnöd ha nem szeretném. Minden online fog zajlani.'
+      'Legalább 1 darab látogatásra szükség lesz, mivel a saját céged alapítási iratát csak Te írhatod alá. Ez követően készítünk egy felhatalmazást, így többször már nem kell átjönnöd ha nem szeretnéd. Minden online fog zajlani.'
   },
   {
     question: 'Szükséges-e román nyelven beszélnem?',

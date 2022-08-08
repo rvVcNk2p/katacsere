@@ -370,10 +370,17 @@
                   </div>
                   <div class="sm:col-span-2 sm:flex sm:justify-end">
                     <input
+                      v-if="!isEmailSendingInProgress"
                       value="Küldés"
                       type="submit"
                       class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 hover:bg-teal-600 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto cursor-pointer"
                     />
+                    <div
+                      v-else
+                      class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 outline-none sm:w-auto cursor-not-allowed"
+                    >
+                      <div class="lds-hourglass" />
+                    </div>
                   </div>
                 </form>
               </div>
@@ -414,6 +421,7 @@ import emailjs from 'emailjs-com'
 import { computed, reactive, ref } from 'vue'
 
 const isEmailSent = ref(false)
+const isEmailSendingInProgress = ref(false)
 
 const form = reactive({
   lastName: '',
@@ -475,6 +483,8 @@ const sendEmail = async () => {
 
   if (!v$.value.$error) {
     try {
+      isEmailSendingInProgress.value = true
+
       const response = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -489,14 +499,16 @@ const sendEmail = async () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY_ID
       )
       console.log(
-        'Ez e-mail sikeresen el lett küldve!',
+        '[%s][%s] Ez e-mail sikeresen el lett küldve!',
         response.status,
         response.text
       )
       resetFields()
       isEmailSent.value = true
+      isEmailSendingInProgress.value = false
     } catch (error) {
       console.log('Hiba történt! Kérlek próbáld újra.', error)
+      isEmailSendingInProgress.value = false
     }
   }
 }
@@ -518,6 +530,33 @@ const resetFields = () => {
   }
   .error-msg {
     @apply flex justify-start mt-1 text-red-500 font-black;
+  }
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+}
+.lds-hourglass:after {
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 12px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
   }
 }
 </style>

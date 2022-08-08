@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative px-10">
     <h2
       class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
     >
@@ -8,7 +8,7 @@
     <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
       Összességében, kb.
       <span class="text-teal-600 font-bold">2 millió Forint </span>lenne az az
-      össze ami nap végén a Te zsebedben maradhat ezzel a konstrukcióval. A
+      összeg ami nap végén a Te zsebedben maradhat ezzel a konstrukcióval. A
       <span class="font-bold">12 millió</span>
       Forintos keretből,
       <span class="text-teal-600 font-bold">10,720,000 Forint</span> marad,
