@@ -93,10 +93,16 @@
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
+import { MAIN_FORM_URL } from '@/data/form'
+
 const navigation = [
   { name: 'Főoldal', href: '/' },
-  { name: 'Áraink', href: '/pricing' },
-  { name: 'Kapcsolat', href: '/contact' }
+  { name: 'Áraink', href: '/araink' },
+  { name: 'Kapcsolat', href: '/contact' },
+  {
+    name: 'Űrlap',
+    href: MAIN_FORM_URL
+  }
 ]
 </script>
 

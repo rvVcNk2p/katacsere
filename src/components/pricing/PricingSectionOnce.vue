@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900">
+  <div id="cegalapitasi-csomagok" class="bg-gray-900">
     <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
       <div class="text-center">
         <h2
@@ -82,7 +82,7 @@
                     <div class="mt-8">
                       <div class="rounded-lg shadow-md">
                         <a
-                          href="#"
+                          :href="MAIN_FORM_URL"
                           class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-teal-600 hover:bg-gray-50"
                           aria-describedby="tier-hobby"
                         >
@@ -156,7 +156,7 @@
                   <div class="mt-10">
                     <div class="rounded-lg shadow-md">
                       <a
-                        href="#"
+                        :href="MAIN_FORM_URL"
                         class="block w-full text-center rounded-lg border border-transparent bg-teal-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-teal-700"
                         aria-describedby="tier-growth"
                       >
@@ -219,7 +219,7 @@
                     <div class="mt-8">
                       <div class="rounded-lg shadow-md">
                         <a
-                          href="#"
+                          :href="MAIN_FORM_URL"
                           class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-teal-600 hover:bg-gray-50"
                           aria-describedby="tier-scale"
                         >
@@ -240,6 +240,8 @@
 
 <script setup lang="ts">
 import { CheckIcon } from '@heroicons/vue/outline'
+
+import { MAIN_FORM_URL } from '@/data/form'
 
 const hobbyFeatures = [
   'Fedezzük a összes cégalapítás költséget ami',

@@ -43,15 +43,15 @@
             >
               <div class="rounded-md shadow">
                 <a
-                  href="#"
+                  :href="MAIN_FORM_URL"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
                 >
-                  Többet szeretnék tudni
+                  Kapcsolatfelvételi űrlap kitöltése
                 </a>
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  href="#feature-section"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-700 bg-teal-100 hover:bg-teal-200 md:py-4 md:text-lg md:px-10"
                 >
                   Tovább olvasok
@@ -73,13 +73,5 @@
 </template>
 
 <script setup lang="ts">
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { MenuIcon, XIcon } from '@heroicons/vue/outline'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' }
-]
+import { MAIN_FORM_URL } from '@/data/form'
 </script>

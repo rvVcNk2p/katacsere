@@ -99,7 +99,7 @@
           <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div class="rounded-md shadow">
               <a
-                href="#"
+                href="#cegalapitasi-csomagok"
                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
               >
                 Cégalapítási csomagok
@@ -107,7 +107,7 @@
             </div>
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
-                href="#"
+                href="#konyvelesi-csomagok"
                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
               >
                 Könyvelési csomagok
@@ -120,14 +120,4 @@
   </div>
 </template>
 
-<script setup>
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { MenuIcon, XIcon } from '@heroicons/vue/outline'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' }
-]
-</script>
+<script lang="ts" setup></script>

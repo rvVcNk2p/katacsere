@@ -1,6 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="max-w-7xl mx-auto py-24 px-4 bg-white sm:px-6 lg:px-8">
+  <div
+    id="konyvelesi-csomagok"
+    class="max-w-7xl mx-auto py-24 px-4 bg-white sm:px-6 lg:px-8"
+  >
     <h2
       class="text-3xl leading-6 font-black text-gray-700 uppercase tracking-wider mb-10"
     >
@@ -78,7 +81,7 @@
         </div>
 
         <a
-          href="#"
+          :href="MAIN_FORM_URL"
           :class="[
             tier.mostPopular
               ? 'bg-teal-500 text-white hover:bg-teal-600'
@@ -96,6 +99,8 @@
 
 <script setup lang="ts">
 import { CheckIcon } from '@heroicons/vue/outline'
+
+import { MAIN_FORM_URL } from '@/data/form'
 
 const pricing = {
   tiers: [

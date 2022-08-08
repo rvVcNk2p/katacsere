@@ -99,12 +99,14 @@ import { defineComponent, h } from 'vue'
 import CtaSection from '@/components/CtaSection.vue'
 import FaqSection from '@/components/FaqSection.vue'
 import { AccountingFaqs, PackagesFaqs, SettingUpCompanyFaqs } from '@/data/faq'
+import { MAIN_FORM_URL } from '@/data/form'
 
 const footerNavigation = {
   support: [
     { name: 'Főoldal', href: '/' },
-    { name: 'Áraink', href: '/pricing' },
-    { name: 'Kapcsolat', href: '/contact' }
+    { name: 'Áraink', href: '/araink' },
+    { name: 'Kapcsolat', href: '/contact' },
+    { name: 'Űrlap', href: MAIN_FORM_URL }
   ],
   social: [
     {

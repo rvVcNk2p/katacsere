@@ -33,7 +33,7 @@ export const PackagesFaqs: Faq[] = [
   {
     question: 'Mi a különbség a csomagok között?',
     answer:
-      'Fontos megemlítenünk, hogy mivel két féle szolgáltatást biztosítunk így van egy <span class="font-bold">egyszeri</span>(cégalapítás) és egy <span class="font-bold">havi</span> (könyvelés) szintű szolgáltatásunk is. <br /><br />A részletes leírást az <a href="/pricing">Áraink</a> nevű oldalon találod.'
+      'Fontos megemlítenünk, hogy mivel két féle szolgáltatást biztosítunk így van egy <span class="font-bold">egyszeri</span>(cégalapítás) és egy <span class="font-bold">havi</span> (könyvelés) szintű szolgáltatásunk is. <br /><br />A részletes leírást az <a href="/araink">Áraink</a> nevű oldalon találod.'
   }
 ]
 
@@ -41,7 +41,7 @@ export const SettingUpCompanyFaqs: Faq[] = [
   {
     question: 'Mennyibe kerül a cég megalapítása?',
     answer:
-      "A részletes leírást az <a href='/pricing'>Áraink</a> nevű oldalon találod."
+      "A részletes leírást az <a href='/araink'>Áraink</a> nevű oldalon találod."
   },
   {
     question: 'Mennyi időbe kerül, mire ki tudom állítani az első számlám?',
@@ -84,7 +84,7 @@ export const AccountingFaqs: Faq[] = [
   {
     question: 'Tudtok biztosítani könyvelési szolgáltatást is?',
     answer:
-      'Természetesen igen. Elsődlegesen a cégalapítási szolgáltatást vásárolhatod meg, s ha Minket választanál könyvelődnek is, arra egy külön havi szolgáltatást tudunk biztosítani.<br />A részletes leírást az <a href="/pricing">Áraink</a> nevű oldalon találod.'
+      'Természetesen igen. Elsődlegesen a cégalapítási szolgáltatást vásárolhatod meg, s ha Minket választanál könyvelődnek is, arra egy külön havi szolgáltatást tudunk biztosítani.<br />A részletes leírást az <a href="/araink">Áraink</a> nevű oldalon találod.'
   },
   {
     question: 'Választhatok más könyvelőt is?',

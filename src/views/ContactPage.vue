@@ -200,9 +200,8 @@
                   Küldj egy üzenetet
                 </h3>
                 <form
-                  action="#"
-                  method="POST"
                   class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                  @submit.prevent="sendEmail()"
                 >
                   <div>
                     <label
@@ -311,12 +310,11 @@
                     </div>
                   </div>
                   <div class="sm:col-span-2 sm:flex sm:justify-end">
-                    <button
+                    <input
+                      value="Küldés"
                       type="submit"
-                      class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
-                    >
-                      Küldés
-                    </button>
+                      class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 hover:bg-teal-600 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto cursor-pointer"
+                    />
                   </div>
                 </form>
               </div>
@@ -332,4 +330,39 @@
 
 <script setup lang="ts">
 import { MailIcon, PhoneIcon } from '@heroicons/vue/outline'
+import emailjs from 'emailjs-com'
+import { ref } from 'vue'
+
+const lastName = ref('Kussy')
+const firstName = ref('Leo')
+const email = ref('kussy.leo@gmail.com')
+const subject = ref('Teszt cim')
+const message = ref('Hello, ez már üzi')
+
+const sendEmail = async () => {
+  try {
+    const response = await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_last_name: lastName.value,
+        from_first_name: firstName.value,
+        subject: subject.value,
+        email: email.value,
+        message: message.value
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY_ID
+    )
+    console.log('SUCCESS!', response.status, response.text)
+  } catch (error) {
+    console.log('FAILED...', error)
+  }
+
+  // Reset form field
+  lastName.value = ''
+  firstName.value = ''
+  email.value = ''
+  subject.value = ''
+  message.value = ''
+}
 </script>

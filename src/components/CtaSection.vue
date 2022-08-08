@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="bg-teal-50">
     <div
@@ -20,7 +19,7 @@
       >
         <div class="inline-flex rounded-md shadow">
           <a
-            href="#"
+            :href="MAIN_FORM_URL"
             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700"
           >
             Kitöltöm
@@ -30,3 +29,7 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { MAIN_FORM_URL } from '@/data/form'
+</script>
