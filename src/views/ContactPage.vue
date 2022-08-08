@@ -64,7 +64,10 @@
           <div class="relative bg-white shadow-xl">
             <h2 id="contact-heading" class="sr-only">Contact us</h2>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-3"
+              :class="{ 'lg:grid-cols-2': isEmailSent }"
+            >
               <!-- Contact information -->
               <div
                 class="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-teal-500 to-teal-600 sm:px-10 xl:p-12"
@@ -195,7 +198,10 @@
               </div>
 
               <!-- Contact form -->
-              <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+              <div
+                v-if="!isEmailSent"
+                class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12"
+              >
                 <h3 class="text-lg font-medium text-gray-900">
                   Küldj egy üzenetet
                 </h3>
@@ -209,14 +215,24 @@
                       class="block text-sm font-medium text-gray-900"
                       >Keresztnév</label
                     >
-                    <div class="mt-1">
+                    <div
+                      class="mt-1"
+                      :class="{ error: v$.firstName.$errors.length }"
+                    >
                       <input
                         id="first-name"
+                        v-model="form.firstName"
+                        placeholder="Zoltán"
                         type="text"
                         name="first-name"
                         autocomplete="given-name"
                         class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-teal-500 focus:border-teal-500 border-gray-300 rounded-md"
                       />
+                      <div v-if="v$.firstName.$error" class="input-errors">
+                        <div class="error-msg">
+                          {{ v$.firstName.$errors[0].$message }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -225,14 +241,24 @@
                       class="block text-sm font-medium text-gray-900"
                       >Vezetéknév</label
                     >
-                    <div class="mt-1">
+                    <div
+                      class="mt-1"
+                      :class="{ error: v$.lastName.$errors.length }"
+                    >
                       <input
                         id="last-name"
+                        v-model="form.lastName"
+                        placeholder="Nagy"
                         type="text"
                         name="last-name"
                         autocomplete="family-name"
                         class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-teal-500 focus:border-teal-500 border-gray-300 rounded-md"
                       />
+                      <div v-if="v$.lastName.$error" class="input-errors">
+                        <div class="error-msg">
+                          {{ v$.lastName.$errors[0].$message }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -241,14 +267,24 @@
                       class="block text-sm font-medium text-gray-900"
                       >Email</label
                     >
-                    <div class="mt-1">
+                    <div
+                      class="mt-1"
+                      :class="{ error: v$.email.$errors.length }"
+                    >
                       <input
                         id="email"
+                        v-model="form.email"
+                        placeholder="email_cím@gmail.com"
                         name="email"
                         type="email"
                         autocomplete="email"
                         class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-teal-500 focus:border-teal-500 border-gray-300 rounded-md"
                       />
+                      <div v-if="v$.email.$error" class="input-errors">
+                        <div class="error-msg">
+                          {{ v$.email.$errors[0].$message }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -265,6 +301,8 @@
                     <div class="mt-1">
                       <input
                         id="phone"
+                        v-model="form.phoneNumber"
+                        placeholder="20 23 18 412"
                         type="text"
                         name="phone"
                         autocomplete="tel"
@@ -279,13 +317,24 @@
                       class="block text-sm font-medium text-gray-900"
                       >Tárgy</label
                     >
-                    <div class="mt-1">
+                    <div
+                      class="mt-1"
+                      :class="{ error: v$.subject.$errors.length }"
+                    >
                       <input
                         id="subject"
+                        v-model="form.subject"
+                        placeholder="Érdeklődés cégalapítással kapcsolatban"
                         type="text"
                         name="subject"
                         class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-teal-500 focus:border-teal-500 border-gray-300 rounded-md"
                       />
+
+                      <div v-if="v$.subject.$error" class="input-errors">
+                        <div class="error-msg">
+                          {{ v$.subject.$errors[0].$message }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="sm:col-span-2">
@@ -296,17 +345,27 @@
                         >Üzenet</label
                       >
                       <span id="message-max" class="text-sm text-gray-500"
-                        >Max. 500 karakter</span
+                        >Max. 1000 karakter</span
                       >
                     </div>
-                    <div class="mt-1">
+                    <div
+                      class="mt-1"
+                      :class="{ error: v$.message.$errors.length }"
+                    >
                       <textarea
                         id="message"
+                        v-model="form.message"
+                        placeholder="Kezdj el írni..."
                         name="message"
                         rows="4"
                         class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-teal-500 focus:border-teal-500 border border-gray-300 rounded-md"
                         aria-describedby="message-max"
                       />
+                      <div v-if="v$.message.$error" class="input-errors">
+                        <div class="error-msg">
+                          {{ v$.message.$errors[0].$message }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="sm:col-span-2 sm:flex sm:justify-end">
@@ -317,6 +376,19 @@
                     />
                   </div>
                 </form>
+              </div>
+              <div
+                v-else
+                class="flex justify-center items-center min-h-[50vh] w-full px-10"
+              >
+                <h3 class="text-teal-500 text-2xl">
+                  <p>Köszönjük a megkeresést!</p>
+                  <br />
+                  <p>
+                    Az e-mailt megkaptuk, s nemsokára fel fogjuk venni Veled a
+                    kapcsolatot!
+                  </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -330,39 +402,122 @@
 
 <script setup lang="ts">
 import { MailIcon, PhoneIcon } from '@heroicons/vue/outline'
+import useVuelidate from '@vuelidate/core'
+import {
+  email,
+  helpers,
+  maxLength,
+  minLength,
+  required
+} from '@vuelidate/validators'
 import emailjs from 'emailjs-com'
-import { ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
-const lastName = ref('Kussy')
-const firstName = ref('Leo')
-const email = ref('kussy.leo@gmail.com')
-const subject = ref('Teszt cim')
-const message = ref('Hello, ez már üzi')
+const isEmailSent = ref(false)
+
+const form = reactive({
+  lastName: '',
+  firstName: '',
+  email: '',
+  phoneNumber: '',
+  subject: '',
+  message: ''
+})
+
+const rules = computed(() => {
+  return {
+    firstName: {
+      required: helpers.withMessage(
+        'A "Keresztnév" mező kitöltése kötelező!',
+        required
+      )
+    },
+    lastName: {
+      required: helpers.withMessage(
+        'A "Vezetéknév" mező kitöltése kötelező!',
+        required
+      )
+    },
+    email: {
+      required: helpers.withMessage(
+        'Az "Email" mező kitöltése kötelező!',
+        required
+      ),
+      email: helpers.withMessage('Helytelen e-mail címet adtál meg!', email)
+    },
+    subject: {
+      required: helpers.withMessage(
+        'A "Tárgy" mező kitöltése kötelező!',
+        required
+      )
+    },
+    message: {
+      required: helpers.withMessage(
+        'Az "Üzenet" mező kitöltése kötelező!',
+        required
+      ),
+      minLengthValue: helpers.withMessage(
+        'Legalább 10 karaktert meg kell adnod!',
+        minLength(10)
+      ),
+      maxLengthValue: helpers.withMessage(
+        'Maximum 1000 karaktert adhatsz meg!',
+        maxLength(1000)
+      )
+    }
+  }
+})
+
+const v$ = useVuelidate(rules, form)
 
 const sendEmail = async () => {
-  try {
-    const response = await emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      {
-        from_last_name: lastName.value,
-        from_first_name: firstName.value,
-        subject: subject.value,
-        email: email.value,
-        message: message.value
-      },
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY_ID
-    )
-    console.log('SUCCESS!', response.status, response.text)
-  } catch (error) {
-    console.log('FAILED...', error)
-  }
+  v$.value.$validate()
 
-  // Reset form field
-  lastName.value = ''
-  firstName.value = ''
-  email.value = ''
-  subject.value = ''
-  message.value = ''
+  if (!v$.value.$error) {
+    try {
+      const response = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_last_name: form.lastName,
+          from_first_name: form.firstName,
+          subject: form.subject,
+          email: form.email,
+          phone_number: form.phoneNumber,
+          message: form.message
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY_ID
+      )
+      console.log(
+        'Ez e-mail sikeresen el lett küldve!',
+        response.status,
+        response.text
+      )
+      resetFields()
+      isEmailSent.value = true
+    } catch (error) {
+      console.log('Hiba történt! Kérlek próbáld újra.', error)
+    }
+  }
+}
+
+const resetFields = () => {
+  form.lastName = ''
+  form.firstName = ''
+  form.email = ''
+  form.phoneNumber = ''
+  form.subject = ''
+  form.message = ''
 }
 </script>
+
+<style lang="scss" scoped>
+.error {
+  input {
+    @apply focus:border-red-500 focus:ring-red-500 border-red-500 focus:outline-none;
+  }
+  .error-msg {
+    @apply flex justify-start mt-1 text-red-500 font-black;
+  }
+}
+</style>
