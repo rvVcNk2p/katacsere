@@ -29,15 +29,15 @@
       figyelmedbe.
       <br />
       3. Ha viszont több céged van vagy a havi szinten kiállított számlák száma
-      meghaladha a 750 darabot, akkor a
+      meghaladja a 750 darabot, akkor a
       <span class="text-black font-black">'Profi'</span> csomagunk lesz, amire
       szükséged van!
     </p>
     <hr class="mx-auto max-w-md border border-teal-500 mt-6" />
     <p class="mt-6 max-w-5xl text-xl text-gray-500 mx-auto">
-      <span class="text-black font-black">FONTOS:</span> Az összes ügyfelünk,
-      ugyan azt a kiemelkedő szolgáltatást fogja kapni mint mindenki más. A
-      csomagok, csak a havi kiállított számlamennyiségben térnek el. Mindenkit
+      <span class="text-black font-black">FONTOS:</span> Az összes ügyfelünk
+      ugyanazt a kiemelkedő szolgáltatást fogja kapni, mint mindenki más. A
+      csomagok csak a havi kiállított számlamennyiségben térnek el. Mindenkit
       kiemelt partnerként kezelünk!
     </p>
 
@@ -140,7 +140,7 @@ const pricing = {
       title: 'Profi',
       price: '99,990',
       frequency: '/hó',
-      description: 'Több mint 750+ számlád van a hónapban? Válaszd ez!',
+      description: 'Több mint 750+ számlád van a hónapban? Válaszd ezt!',
       features: [
         'Havi 750+ számla felett',
         'Könyvelés folyamatos frissen tartása',

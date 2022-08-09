@@ -16,8 +16,8 @@
           class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl"
         >
           Csomagjaink 120.000-200.000 Forint között terjednek, s 3 kategóriába
-          sorolják be a szolgáltatásainkat amit az alapján állítottunk össze,
-          hogy mennyire szeretnél önállósodni a cég alapítás folyamatában.
+          sorolják be a szolgáltatásainkat, amit az alapján állítottunk össze,
+          hogy mennyire szeretnél önállósodni a cégalapítás folyamatában.
           <br />
           Összességében, a kényelem és a gyorsaság az amiben eltérnek
           csomagjaink. Bármelyiket is választod, biztosan nem fogsz csalódni!
@@ -244,12 +244,12 @@ import { CheckIcon } from '@heroicons/vue/outline'
 import { MAIN_FORM_URL } from '@/data/form'
 
 const hobbyFeatures = [
-  'Fedezzük a összes cégalapítás költséget ami',
+  'Fedezzük a összes cégalapítás költséget, ami',
   'Közvetlenül a könyvelő irodával kell tartanod majd a kapcsolatot',
   '3-4 hét alatt megalapításra kerül a céged'
 ]
 const growthFeatures = [
-  'Minden ami az előző csomagban',
+  'Minden, ami az előző csomagban',
   'Segítünk az átutazásban ',
   'Segítünk a bankszámla megnyitásában ',
   'Válaszolunk az összes kérdésedre, legyen az bármi',
@@ -257,7 +257,7 @@ const growthFeatures = [
   'Kiemelt segítségnyújtás a megalapítási folyamat alatt'
 ]
 const scaleFeatures = [
-  'Minden ami az előző csomagban',
+  'Minden, ami az előző csomagban',
   'Kiemelten kezeljük az ügyed, és a lehető leggyorsabban intézkedünk',
   '2-3 hét alatt megalapításra kerül a céged'
 ]

@@ -26,7 +26,7 @@ export const features_12 = [
     ]
   },
   {
-    title: 'Általányban megállapított jövedelem',
+    title: 'Átalány megállapított jövedelem',
     tiers: [
       { title: 'starter', value: '7,200,000', bold: false, warn: false },
       {
@@ -146,7 +146,7 @@ export const perks_12 = [
     ]
   },
   {
-    title: 'Könyvelésí díj',
+    title: 'Könyvelési díj',
     tiers: [
       { title: 'starter', value: '174,000', bold: false },
       {
@@ -253,7 +253,7 @@ export const features_24 = [
     ]
   },
   {
-    title: 'Általányban megállapított jövedelem',
+    title: 'Átalány megállapított jövedelem',
     tiers: [
       { title: 'starter', value: '14,400,000', bold: false, warn: false },
       {
@@ -373,7 +373,7 @@ export const perks_24 = [
     ]
   },
   {
-    title: 'Könyvelésí díj',
+    title: 'Könyvelési díj',
     tiers: [
       { title: 'starter', value: '360,000', bold: false },
       {

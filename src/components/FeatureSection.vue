@@ -61,14 +61,14 @@ const features = [
   {
     name: 'Cégalapítás A-tól Z-ig',
     description:
-      'Ha nem akarsz külön keresni egy megbízható ügyvédi irodát, könyvelő csapatot és székhely szolgáltatót akkor Mi levesszük ezt a terhet a válladról. Veled leszünk az elindulástól kezdve, a havi szintű kapcsolattartáson keresztül egészen az éves mérleg elkészítéséig. Egy szóval, végig.',
+      'Ha nem akarsz külön keresni egy megbízható ügyvédi irodát, könyvelő csapatot és székhely szolgáltatót, akkor Mi levesszük ezt a terhet a válladról. Veled leszünk az elindulástól kezdve, a havi szintű kapcsolattartáson keresztül egészen az éves mérleg elkészítéséig. Egy szóval, végig.',
     icon: LightningBoltIcon
   },
 
   {
     name: 'Magyar nyelvű kollégák',
     description:
-      'Ha attól tartanál, hogy magas szintű román nyelvtudásra van szükséged ahhoz, hogy megalapíts egy romániai céget akkor ez igaz is lehet, ha nem Mi segítenénk Neked. Mivel Nálunk a legtöbb kollégánk kétnyelvű, így a kommunikáció a partnereink között magyarul zajlik.',
+      'Ha attól tartanál, hogy magas szintű román nyelvtudásra van szükséged ahhoz, hogy megalapíts egy romániai céget, akkor ez igaz is lehet, ha nem Mi segítenénk Neked. Mivel Nálunk a legtöbb kollégánk kétnyelvű, így a kommunikáció a partnereink között magyarul zajlik.',
     icon: AnnotationIcon
   },
   {
@@ -80,7 +80,7 @@ const features = [
   {
     name: 'Áfa mentes számlakiállítás',
     description:
-      'Ha román céggel szeretnél kiállítani Forint alapú számlát Magyarországi partnernek (s a cég rendelkezik érvényes közösségi adószámmmal), akkor ezt megteheted akár 0% áfa tatartalommal is.',
+      'Ha román céggel szeretnél kiállítani Forint alapú számlát magyarországi partnernek (s a cég rendelkezik érvényes közösségi adószámmmal), akkor ezt megteheted akár 0% áfa tartalommal is.',
     icon: ScaleIcon
   }
 ]

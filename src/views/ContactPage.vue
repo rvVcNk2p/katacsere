@@ -174,7 +174,7 @@
                 </div>
                 <h3 class="text-lg font-medium text-white">Elérhetőségek</h3>
                 <p class="mt-6 text-base text-teal-50 max-w-3xl">
-                  A hétvége folyamán az ez e-mail címünkön tudsz majd elérni
+                  A hétvége folyamán ezen az e-mail címünkön tudsz majd elérni
                   Minket. Megértésed köszönjük szépen!
                 </p>
                 <dl class="mt-8 space-y-6">
