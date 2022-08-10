@@ -178,14 +178,14 @@
                   Minket. Megértésed köszönjük szépen!
                 </p>
                 <dl class="mt-8 space-y-6">
-                  <dt><span class="sr-only">Telefonszám</span></dt>
+                  <!-- <dt><span class="sr-only">Telefonszám</span></dt>
                   <dd class="flex text-base text-teal-50">
                     <PhoneIcon
                       class="flex-shrink-0 w-6 h-6 text-teal-200"
                       aria-hidden="true"
                     />
-                    <span class="ml-3">+36 (20) 23-18-411</span>
-                  </dd>
+                    <span class="ml-3">TELEFONSZÁM</span>
+                  </dd> -->
                   <dt><span class="sr-only">Email</span></dt>
                   <dd class="flex text-base text-teal-50">
                     <MailIcon

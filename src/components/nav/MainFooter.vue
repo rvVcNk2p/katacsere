@@ -59,10 +59,10 @@
                   >katacsere.info@gmail.com</a
                 >
               </p>
-              <p class="text-gray-500 text-base mt-6">
+              <!-- <p class="text-gray-500 text-base mt-6">
                 <span class="text-white font-bold">Telefon</span>:
-                +36-20/231-8411
-              </p>
+                TELEFONSZÁM
+              </p> -->
             </div>
             <div class="mt-12 md:mt-0">
               <h3
