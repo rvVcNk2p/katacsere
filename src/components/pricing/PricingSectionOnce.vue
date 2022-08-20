@@ -30,7 +30,7 @@
         <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3" />
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="relative lg:grid lg:grid-cols-7">
-            <div
+            <!-- <div
               class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3"
             >
               <div
@@ -93,9 +93,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div
-              class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4"
+              class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-2 lg:col-end-5 lg:row-start-1 lg:row-end-4"
             >
               <div class="relative z-10 rounded-lg shadow-xl">
                 <div
@@ -117,13 +117,13 @@
                       id="tier-growth"
                       class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
                     >
-                      Teljes csomag
+                      Normál csomag
                     </h3>
                     <div class="mt-4 flex items-center justify-center">
                       <span
                         class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl"
                       >
-                        <span class="font-extrabold"> 149,990 </span>
+                        <span class="font-extrabold"> 119,990 </span>
                       </span>
                       <span class="text-2xl font-medium text-gray-500">
                         FT
@@ -168,7 +168,7 @@
               </div>
             </div>
             <div
-              class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3"
+              class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-5 lg:col-end-7 lg:row-start-2 lg:row-end-3"
             >
               <div
                 class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg"
@@ -243,22 +243,26 @@ import { CheckIcon } from '@heroicons/vue/outline'
 
 import { MAIN_FORM_URL } from '@/data/form'
 
-const hobbyFeatures = [
-  'Fedezzük a összes cégalapítás költséget, ami',
-  'Közvetlenül a könyvelő irodával kell tartanod majd a kapcsolatot',
-  '3-4 hét alatt megalapításra kerül a céged'
-]
+// const hobbyFeatures = [
+//   'Fedezzük a összes cégalapítás költséget, ami',
+//   'Közvetlenül a könyvelő irodával kell tartanod majd a kapcsolatot',
+//   '3-4 hét alatt megalapításra kerül a céged'
+// ]
+
 const growthFeatures = [
-  'Minden, ami az előző csomagban',
-  'Segítünk az átutazásban ',
-  'Segítünk a bankszámla megnyitásában ',
-  'Válaszolunk az összes kérdésedre, legyen az bármi',
-  'Munkaidőn kívül is kereshetsz minket bizalommal',
-  'Kiemelt segítségnyújtás a megalapítási folyamat alatt'
+  'Fedezzük a összes cégalapítás költséget',
+  'Segítünk a bankszámla megnyitásában',
+  'Kapcsolat tartás a könyvelő irodával',
+  'Válaszolunk a felmerülő kérdéseidre',
+  'Ha elakadnál Mi ott leszünk, hogy segítsünk',
+  'Kiemelt segítségnyújtás a megalapítási folyamat alatt',
+  '3-4 hét alatt megalapításra kerül a céged'
 ]
 const scaleFeatures = [
   'Minden, ami az előző csomagban',
-  'Kiemelten kezeljük az ügyed, és a lehető leggyorsabban intézkedünk',
+  'Kiemelten kezeljük az ügyed',
+  'Segítünk az átutazásban',
+  'Munkaidőn kívül is kereshetsz minket bizalommal',
   '2-3 hét alatt megalapításra kerül a céged'
 ]
 </script>
