@@ -15,8 +15,7 @@
         <p
           class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl"
         >
-          Csomagjaink 120.000-200.000 Forint között terjednek, s 3 kategóriába
-          sorolják be a szolgáltatásainkat, amit az alapján állítottunk össze,
+          2 féle csomagban kínáljuk a szolgáltatásainkat, amit az alapján állítottunk össze,
           hogy mennyire szeretnél önállósodni a cégalapítás folyamatában.
           <br />
           Összességében, a kényelem és a gyorsaság az amiben eltérnek
