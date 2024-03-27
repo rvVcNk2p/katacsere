@@ -7,14 +7,15 @@
     <h2
       class="text-3xl leading-6 font-black text-gray-700 uppercase tracking-wider mb-10"
     >
-      KÖNYVELÉS
+      EGYEDI WEBSHOPOK
     </h2>
     <h2
       class="text-3xl font-extrabold text-gray-900 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl"
     >
-      Árajánlatok minden méretű cég számára
+      Áraink folyamatosan változnak, ezért kérjük, hogy vedd fel velünk a
+      kapcsolatot!
     </h2>
-    <p class="mt-6 max-w-5xl text-xl text-gray-500 mx-auto">
+    <!--<p class="mt-6 max-w-5xl text-xl text-gray-500 mx-auto">
       Válaszd ki azt a megoldást, amelyik a legjobban passzol a működésedhez.
     </p>
     <hr class="mx-auto max-w-md border border-teal-500 mt-6" />
@@ -41,7 +42,6 @@
       kiemelt partnerként kezelünk!
     </p>
 
-    <!-- Tiers -->
     <div
       class="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8"
     >
@@ -68,7 +68,6 @@
           </p>
           <p class="mt-6 text-gray-500">{{ tier.description }}</p>
 
-          <!-- Feature list -->
           <ul role="list" class="mt-6 space-y-6">
             <li v-for="feature in tier.features" :key="feature" class="flex">
               <CheckIcon
@@ -94,7 +93,7 @@
     </div>
 
     <hr class="mx-auto max-w-md border border-teal-500 mt-28" />
-  </div>
+  --></div>
 </template>
 
 <script setup lang="ts">

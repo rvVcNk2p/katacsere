@@ -3,47 +3,22 @@
     <CtaSection />
     <FaqSection
       title="Gyakran ismételt kérdések"
-      sub-title="Csomagjaink"
+      sub-title="Közös munka"
       :faqs="PackagesFaqs"
     />
     <CtaSection />
     <FaqSection
       title="Gyakran ismételt kérdések"
-      sub-title="Cégalapítás"
+      sub-title="Egyéb tudnivalók"
       :faqs="SettingUpCompanyFaqs"
     />
     <CtaSection />
-    <FaqSection
-      title="Gyakran ismételt kérdések"
-      sub-title="Könyvelés"
-      :faqs="AccountingFaqs"
-    />
 
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-2 xl:gap-8">
-        <div class="space-y-10 xl:col-span-1">
-          <div class="h-full flex justify-center items-center">
-            <p class="text-gray-400 text-base">
-              "A pénz értelmesen beszél, olyan nyelven, amelyet minden nemzet
-              megért." <br />
-              - Aphra Behn
-            </p>
-          </div>
-          <div class="flex justify-center space-x-6 hidden">
-            <a
-              v-for="item in footerNavigation.social"
-              :key="item.name"
-              :href="item.href"
-              class="text-gray-400 hover:text-gray-300"
-            >
-              <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-            </a>
-          </div>
-        </div>
+      <div class="flex flex-col sm:grid sm:grid-cols-2 gap-8">
         <div class="mt-12 grid grid-cols-1 gap-8 xl:mt-0">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div class="md:grid">
             <div class="flex flex-col items-center justify-center">
               <h3
                 class="text-base font-semibold text-gray-200 tracking-wider uppercase"
@@ -53,40 +28,44 @@
               <p class="text-gray-500 text-base mt-6">
                 <span class="text-white font-bold">Email:&nbsp;</span
                 ><a
-                  href="mailto:katacsere.info@gmail.com"
-                  title="mailto:katacsere.info@gmail.com"
+                  href="mailto:ourmagicalstars.info@gmail.com"
+                  title="mailto:ourmagicalstars.info@gmail.com"
                   aria-describedby="a11y-external-message"
-                  >katacsere.info@gmail.com</a
+                  >ourmagicalstars.info@gmail.com</a
                 >
+              </p>
+              <p class="text-gray-500 text-base mt-6">
+                <span class="text-white font-bold">Telefonszám:&nbsp;</span
+                ><a aria-describedby="a11y-external-message">0741473463</a>
               </p>
               <!-- <p class="text-gray-500 text-base mt-6">
                 <span class="text-white font-bold">Telefon</span>:
                 TELEFONSZÁM
               </p> -->
             </div>
-            <div class="mt-12 md:mt-0">
-              <h3
-                class="text-base font-semibold text-gray-200 tracking-wider uppercase"
-              >
-                Navigáció
-              </h3>
-              <ul role="list" class="mt-4 space-y-4">
-                <li v-for="item in footerNavigation.support" :key="item.name">
-                  <a
-                    :href="item.href"
-                    class="text-base text-gray-400 hover:text-gray-300"
-                  >
-                    {{ item.name }}
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <h3
+            class="text-base font-semibold text-gray-200 tracking-wider uppercase"
+          >
+            Navigáció
+          </h3>
+          <ul role="list" class="mt-4 space-y-4">
+            <li v-for="item in footerNavigation.support" :key="item.name">
+              <a
+                :href="item.href"
+                class="text-base text-gray-400 hover:text-gray-300"
+              >
+                {{ item.name }}
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="mt-12 border-t border-gray-700 pt-8">
         <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022 Katacsere.hu, Minden jog fenntartva.
+          &copy; 2024 Ourmagicalstars.hu, Minden jog fenntartva.
         </p>
       </div>
     </div>
@@ -98,7 +77,7 @@ import { defineComponent, h } from 'vue'
 
 import CtaSection from '@/components/CtaSection.vue'
 import FaqSection from '@/components/FaqSection.vue'
-import { AccountingFaqs, PackagesFaqs, SettingUpCompanyFaqs } from '@/data/faq'
+import { PackagesFaqs, SettingUpCompanyFaqs } from '@/data/faq'
 import { MAIN_FORM_URL } from '@/data/form'
 
 const footerNavigation = {

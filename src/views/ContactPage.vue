@@ -192,7 +192,7 @@
                       class="flex-shrink-0 w-6 h-6 text-teal-200"
                       aria-hidden="true"
                     />
-                    <span class="ml-3">katacsere.info@gmail.com</span>
+                    <span class="ml-3">ourmagicalstars.info@gmail.com</span>
                   </dd>
                 </dl>
               </div>

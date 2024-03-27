@@ -5,7 +5,7 @@
         <h2
           class="text-3xl leading-6 font-semibold text-gray-300 uppercase tracking-wider mb-10"
         >
-          Cégalapítás
+          EGYEDI WEBOLADL
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl"
@@ -15,11 +15,9 @@
         <p
           class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl"
         >
-          2 féle csomagban kínáljuk a szolgáltatásainkat, amit az alapján állítottunk össze,
-          hogy mennyire szeretnél önállósodni a cégalapítás folyamatában.
-          <br />
-          Összességében, a kényelem és a gyorsaság az amiben eltérnek
-          csomagjaink. Bármelyiket is választod, biztosan nem fogsz csalódni!
+          2 féle csomagban kínáljuk a szolgáltatásainkat, amit az alapján
+          állítottunk össze, hogy hány oldalt szeretnél hozzáadni az elkészült
+          weboldalhoz.
         </p>
       </div>
     </div>
@@ -122,7 +120,7 @@
                       <span
                         class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl"
                       >
-                        <span class="font-extrabold"> 119,990 </span>
+                        <span class="font-extrabold"> 1,199,900 </span>
                       </span>
                       <span class="text-2xl font-medium text-gray-500">
                         FT
@@ -185,7 +183,7 @@
                         <span
                           class="px-3 flex items-start text-6xl tracking-tight text-gray-900"
                         >
-                          <span class="font-extrabold"> 199,990 </span>
+                          <span class="font-extrabold"> 2,000,000 </span>
                         </span>
                         <span class="text-xl font-medium text-gray-500">
                           FT
@@ -249,19 +247,19 @@ import { MAIN_FORM_URL } from '@/data/form'
 // ]
 
 const growthFeatures = [
-  'Fedezzük a összes cégalapítás költséget',
-  'Segítünk a bankszámla megnyitásában',
-  'Kapcsolat tartás a könyvelő irodával',
-  'Válaszolunk a felmerülő kérdéseidre',
+  'Össze alap weboldal oldalak',
+  'Egyedi domain név regisztráció .hu-s domain név esetén',
+  'Egyedi email címek létrehozása, max. 5 db',
+  'Egyedi tárhely szolgáltatás, max. 5 GB',
   'Ha elakadnál Mi ott leszünk, hogy segítsünk',
-  'Kiemelt segítségnyújtás a megalapítási folyamat alatt',
-  '3-4 hét alatt megalapításra kerül a céged'
+  'SSL tanúsítvány biztosítása',
+  'Havi 1 óra ingyenes weboldal karbantartás'
 ]
 const scaleFeatures = [
   'Minden, ami az előző csomagban',
-  'Kiemelten kezeljük az ügyed',
-  'Segítünk az átutazásban',
+  'Összetett weboldalak elkészítése, max. 10 oldal',
   'Munkaidőn kívül is kereshetsz minket bizalommal',
-  '2-3 hét alatt megalapításra kerül a céged'
+  'Heti 1 óra ingyenes weboldal karbantartás',
+  'Kiemelten kezeljük az ügyed'
 ]
 </script>
